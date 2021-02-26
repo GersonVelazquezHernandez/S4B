@@ -11,7 +11,7 @@ class EmployeesController extends Controller
     public function index(){
         $companies = new CompaniesController();
         $companies = $companies->devolverCompañias();
-        $employees = Employee::paginate(3);
+        $employees = Employee::paginate(10);
         //return view('companies.index', compact('companies'));
         return view('employees.index', compact('companies','employees'));
     }

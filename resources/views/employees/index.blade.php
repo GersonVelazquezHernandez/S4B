@@ -66,6 +66,7 @@
         <!-- /.box-body -->
         
         <div class="box-footer">
+          {{$companies->links()}}
         </div>
         <!-- /.box-body -->
       </div>
